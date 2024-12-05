@@ -415,13 +415,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
           <section>
             <h3 id="results-heading" className="text-2xl font-semibold mb-6">Real Results</h3>
             <div className="bg-white rounded-lg overflow-hidden shadow-lg p-6">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-11-28%20at%2011.46.35%E2%80%AFAM%20(1)-ApTc4FkUWFrVNuX66NfdxcgIWkUMYa.png"
-                alt="Before and after comparison showing lip plumping results"
-                width={600}
-                height={300}
-                className="w-full max-w-2xl mx-auto rounded-lg object-cover object-[center_20%] mb-6"
-              />
               <div className="w-full h-[300px] overflow-hidden rounded-lg shadow-lg relative mb-6">
                 <video 
                   ref={videoRef}
@@ -439,6 +432,15 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     <Play className="w-16 h-16 text-white" />
                   </div>
                 )}
+              </div>
+              <div className="w-full max-w-2xl mx-auto mb-6">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-11-28%20at%2011.46.35%E2%80%AFAM%20(1)-ApTc4FkUWFrVNuX66NfdxcgIWkUMYa.png"
+                  alt="Before and after comparison showing lip plumping results"
+                  width={600}
+                  height={300}
+                  className="w-full rounded-lg shadow-lg object-cover object-[center_20%]"
+                />
               </div>
               <p className="text-center text-gray-800 mt-4 font-semibold text-lg">
                 Actual results after exactly 5 minutes of using it.<br />

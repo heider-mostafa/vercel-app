@@ -37,28 +37,45 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <div className="relative h-[80vh] overflow-hidden">
-      <video
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9606815-uhd_3840_2160_25fps-G69wvoIkS9QY6sWqRvsioejrWI3a1a.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-        <div className="text-center text-white">
-          <Badge variant="secondary" className="mb-4">Discover Rovi</Badge>
-          <h2 className="text-5xl font-bold mb-4">Trending Products</h2>
-          <p className="text-xl mb-6">Get The Hottest Lipsticks Before They're Gone!</p>
-          <Link href="/products">
-            <Button size="lg" className="animate-pulse bg-black hover:bg-gray-800">
-              Shop Now <TrendingUp className="ml-2" />
-            </Button>
-          </Link>
+    <>
+      <div className="relative h-[80vh] overflow-hidden">
+        <video
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9606815-uhd_3840_2160_25fps-G69wvoIkS9QY6sWqRvsioejrWI3a1a.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+          <div className="text-center text-white">
+            <Badge variant="secondary" className="mb-4">Discover Rovi</Badge>
+            <h2 className="text-5xl font-bold mb-4">Trending Products</h2>
+            <p className="text-xl mb-6">Get The Hottest Lipsticks Before They're Gone!</p>
+            <Link href="/products">
+              <Button size="lg" className="animate-pulse bg-black hover:bg-gray-800">
+                Shop Now <TrendingUp className="ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-2xl mx-auto">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-11-28%20at%2011.46.35%E2%80%AFAM%20(1)-ApTc4FkUWFrVNuX66NfdxcgIWkUMYa.png"
+            alt="Before and after comparison showing lip plumping results"
+            width={600}
+            height={300}
+            className="w-full rounded-lg shadow-lg object-cover object-[center_20%]"
+          />
+          <p className="text-center text-gray-800 mt-4 font-semibold text-lg">
+            Actual results after exactly 5 minutes of using it.<br />
+            Notice the enhanced volume and glossy finish.
+          </p>
+        </div>
+      </div>
+    </>
   )
 }
 
